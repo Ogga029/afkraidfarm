@@ -5,4 +5,4 @@ Version: 1.21.4.
 Made by ogga029.
 
 ## Download:
-Click (Here)[https://github.com/Ogga029/afkraidfarm/releases/tag/release]
+Click Here: [https://github.com/Ogga029/afkraidfarm/releases/tag/release]
