@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.ogga029.afkraidfarm.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "PauseScreenMixin",
+    "BossBarHudAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
