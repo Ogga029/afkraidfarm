@@ -25,7 +25,7 @@ public abstract class PauseScreenMixin extends Screen {
         TextRenderer textRenderer = client.textRenderer;
 
         CheckboxWidget checkbox = CheckboxWidget.builder(
-                        Text.translatableWithFallback("afkraidfarm.gui.toggle", "Afk Raid Farm Drinking [Translation-key not found]"),
+                        Text.literal("Afk Raid Farm Drinking"),
                         textRenderer
                 )
                 .pos(10, 10)

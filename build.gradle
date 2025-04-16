@@ -44,18 +44,23 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
+def modVersion = project.version
+def mcVersion = project.minecraft_version
+def loaderVersion = project.loader_version
+
 processResources {
-    inputs.property "version", project.version
-    inputs.property "minecraft_version", project.minecraft_version
-    inputs.property "loader_version", project.loader_version
-    filteringCharset "UTF-8"
+    inputs.property "version", modVersion
+    inputs.property "minecraft_version", mcVersion
+    inputs.property "loader_version", loaderVersion
+    filteringCharset = "UTF-8"
 
     filesMatching("fabric.mod.json") {
-        expand "version": project.version,
-                "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+        expand "version": modVersion,
+               "minecraft_version": mcVersion,
+               "loader_version": loaderVersion
     }
 }
+
 
 def targetJavaVersion = 21
 tasks.withType(JavaCompile).configureEach {
